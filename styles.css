@@ -1,7 +1,5 @@
 /* ==================================================
    VARIABLES CSS
-   Las variables permiten reutilizar colores
-   en diferentes partes de la página.
    ================================================== */
 
 :root {
@@ -13,10 +11,8 @@
     --color-borde: #b7e4e1;
 }
 
-
 /* ==================================================
    SELECTOR UNIVERSAL
-   Se aplica a todos los elementos.
    ================================================== */
 
 * {
@@ -26,7 +22,6 @@
 
 /* ==================================================
    SELECTOR DE ELEMENTO
-   Estilos generales del cuerpo.
    ================================================== */
 
 body {
@@ -43,7 +38,7 @@ body {
 
 /* ==================================================
    ENCABEZADO
-   Selector mediante ID.
+   Selector mediante ID
    ================================================== */
 
 #inicio {
@@ -55,11 +50,9 @@ body {
     padding: 30px;
 }
 
-
 /* ==================================================
    IMAGEN PRINCIPAL
    ================================================== */
-
 .imagen-principal {
     width: 100%;
     max-width: 300px;
@@ -72,11 +65,9 @@ body {
     margin-bottom: 20px;
 }
 
-
 /* ==================================================
    TÍTULOS
    ================================================== */
-
 h1 {
     font-size: 2.2rem;
     margin-bottom: 10px;
@@ -90,10 +81,8 @@ h2 {
     padding-bottom: 8px;
 }
 
-
 /* ==================================================
    ENLACES
-   Selector de elemento.
    ================================================== */
 
 a {
@@ -101,13 +90,10 @@ a {
     text-decoration: none;
 }
 
-
 /* Pseudoclase hover */
-
 a:hover {
     text-decoration: underline;
 }
-
 
 /* ==================================================
    MENÚ DE NAVEGACIÓN
@@ -123,8 +109,6 @@ nav a {
     margin: 0 10px;
     padding: 5px;
 }
-
-
 /* ==================================================
    CONTENIDO PRINCIPAL
    ================================================== */
@@ -135,7 +119,6 @@ main {
 
     margin: 30px auto;
 }
-
 
 /* ==================================================
    SECCIONES
@@ -150,7 +133,6 @@ section {
     border: 1px solid var(--color-borde);
     border-radius: 8px;
 }
-
 
 /* ==================================================
    IMÁGENES DE LAS SECCIONES
@@ -169,7 +151,6 @@ section {
     border: 2px solid var(--color-borde);
 }
 
-
 /* ==================================================
    PÁRRAFOS
    ================================================== */
@@ -177,7 +158,6 @@ section {
 p {
     line-height: 1.6;
 }
-
 
 /* ==================================================
    LISTAS
@@ -192,7 +172,6 @@ li {
     margin-bottom: 8px;
 }
 
-
 /* ==================================================
    SELECTOR DE CLASE
    ================================================== */
@@ -200,7 +179,6 @@ li {
 .destacado {
     border-left: 5px solid var(--color-secundario);
 }
-
 
 /* ==================================================
    PIE DE PÁGINA
@@ -220,19 +198,13 @@ footer {
 
 /* ==================================================
    HACK CSS
-   !important permite dar prioridad a esta regla.
-   Se incluye porque el trabajo solicita demostrar
-   el uso de hacks CSS.
    ================================================== */
 
 footer p {
     margin: 0 !important;
 }
-
-
 /* ==================================================
    MEDIA QUERY
-   Permite adaptar la página a celulares.
    ================================================== */
 
 @media (max-width: 600px) {
@@ -240,13 +212,14 @@ footer p {
     main {
         width: 90%;
     }
-
     nav a {
         display: block;
         margin: 8px 0;
     }
-
     h1 {
+        font-size: 1.8rem;
+    }
+}
         font-size: 1.8rem;
     }
 }
